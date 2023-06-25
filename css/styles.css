@@ -1332,3 +1332,10 @@ ul {
     margin: 0;
   }
 }
+
+/*-------------min-width:1158-----------*/
+@media (min-width: 1158px) {
+  .menu-toggle {
+    display: none;
+  }
+}
