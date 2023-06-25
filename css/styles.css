@@ -1,3 +1,4 @@
+/*---------General-----------------*/
 :root {
   --color-grey: #434455;
   --color-blue: #4d5ae5;
@@ -37,28 +38,37 @@ p {
   margin: 0;
 }
 
-header li,
-address li {
-  display: inline-block;
-  flex-direction: row;
+.container {
+  min-width: 320px;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* ------------Container Header----------*/
 .hed {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+header li,
+address li {
+  display: inline-block;
+  flex-direction: row;
+}
+
 .main-hed {
   display: flex;
   align-items: center;
-}
-
-.container {
-  min-width: 320px;
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .logo-hed {
@@ -76,16 +86,8 @@ address li {
   color: var(--color-blue);
 }
 
-.link {
-  text-decoration: none;
-}
-
 .part-logo {
   color: var(--color-darkgrey);
-}
-
-.list {
-  list-style: none;
 }
 
 .hed .list {
@@ -1338,4 +1340,8 @@ ul {
   .menu-toggle {
     display: none;
   }
+}
+
+.fbvfrbji {
+  color: #2e2f42;
 }
