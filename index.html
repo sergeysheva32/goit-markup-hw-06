@@ -59,8 +59,28 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="32"
+            height="22"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
+
     <main>
       <section class="hero">
         <div class="container">
@@ -128,6 +148,7 @@
           </ul>
         </div>
       </section>
+
       <section class="section-three">
         <div class="container">
           <h2 class="header-two">What are we doing</h2>
@@ -159,6 +180,7 @@
           </ul>
         </div>
       </section>
+
       <section class="section-four">
         <div class="container">
           <h2 class="header-two">Our Team</h2>
@@ -334,6 +356,7 @@
           </ul>
         </div>
       </section>
+
       <section class="section-five">
         <div class="container">
           <h2 class="header-customers">Customers</h2>
@@ -448,6 +471,79 @@
         </div>
       </div>
     </footer>
+
+    <!-------------Mobile Menu--------------->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="menu-mobile-container">
+        <div class="button-close-mobile">
+          <button class="menu-toggle js-close-menu">
+            <svg class="icon-modal" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-menu">
+          <li><a class="mobile-menu-link" href="">Studio</a></li>
+          <li><a class="mobile-menu-link" href="">Portfolio</a></li>
+          <li><a class="mobile-menu-link" href="">Contacts</a></li>
+        </ul>
+        <address class="address-mobile-menu">
+          <ul class="list-address">
+            <li>
+              <a class="contacts-mobile-menu-tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                class="contacts-mobile-menu-mail"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="mobile-menu-social">
+          <ul class="mobile-menu-social-list">
+            <li class="mobile-menu-social-item">
+              <a class="mobile-menu-social-link" href="">
+                <svg class="foot-two-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-item">
+              <a class="mobile-menu-social-link" href="">
+                <svg class="foot-two-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-item">
+              <a class="mobile-menu-social-link" href="">
+                <svg class="foot-two-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-item">
+              <a class="mobile-menu-social-link" href="">
+                <svg class="foot-two-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 
     <!---------Modal Window----------->
     <div class="backdrop is-hidden" data-modal>
