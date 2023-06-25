@@ -1027,6 +1027,7 @@ ul {
   .form-subscribe {
     display: flex;
     flex-direction: column;
+    min-width: 300px;
   }
 
   .foot-two,
@@ -1036,7 +1037,7 @@ ul {
   }
 
   .input-subscribe {
-    width: 398px;
+    min-width: 300px;
   }
 
   .button-subscribe {
