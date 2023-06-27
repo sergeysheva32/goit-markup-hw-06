@@ -321,7 +321,7 @@ img {
 }
 
 .section-four .list-name {
-  width: 100%;
+  min-width: 264px;
   margin-bottom: 72px;
 }
 
