@@ -138,4 +138,25 @@
   }
 
   /*Potfolio*/
+
+  .list.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .list-name-portfolio {
+    width: calc((100% - 24px) / 2);
+    margin: 0;
+  }
+
+  img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: block;
+  }
 }
