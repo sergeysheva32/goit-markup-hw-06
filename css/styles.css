@@ -42,7 +42,7 @@ p {
   min-width: 320px;
   max-width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 5px;
 }
 
 .link {
@@ -91,7 +91,7 @@ address li {
 }
 
 .hed .list {
-  display: flex;
+  display: none;
   gap: 40px;
 }
 
@@ -174,17 +174,31 @@ address li {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/phone-hero.jpg);
+    url(../images/hero-phone.jpg);
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-phone-2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 .header-one {
   font-family: 'Roboto';
-  font-size: 56px;
-  letter-spacing: 0.02em;
+  font-size: 36px;
+  letter-spacing: 0.72px;
   text-align: center;
   color: var(--color-white);
   line-height: 1.07;
@@ -196,7 +210,8 @@ address li {
 /*section 2 */
 
 .advantages-icons {
-  display: flex;
+  /* display: flex; */
+  display: none;
   align-items: center;
   justify-content: center;
   height: 112px;
@@ -212,33 +227,42 @@ address li {
 
 .section-two .list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .list-advantages {
-  width: calc((100% - 72px) / 4);
-  width: 264px;
+  /* width: calc((100% - 72px) / 4); */
+  min-width: 320px;
   height: 112px;
 }
 
 .header-three {
   /* section 2 and section 3 */
   font-family: 'Roboto' sans-serif;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 36px;
   letter-spacing: 0.02em;
-  line-height: 24px;
+  line-height: 40px;
   color: var(--color-darkgrey);
   margin-bottom: 8px;
+  text-align: center;
+}
+
+.advantages-text {
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 16px;
+  color: #434455;
 }
 
 /*section 3 */
-.section-three {
-  padding-bottom: 120px;
-}
 
-.section-three .header-two {
-  margin-top: 120px;
+.section-three {
+  display: none;
 }
 
 .header-two {
@@ -252,18 +276,13 @@ address li {
   margin-bottom: 72px;
 }
 
-.section-three .list {
-  display: flex;
-  padding: 0;
-  gap: 24px;
-}
-
 .list-three {
   width: calc((100% - 48px) / 3);
 }
 
 img {
   margin: 0;
+  width: 100%;
   padding: 0;
   display: block;
 }
@@ -271,16 +290,20 @@ img {
 /*section 4 */
 .section-four {
   background-color: var(--color-button);
-  padding-top: 120px;
-  padding-bottom: 120px;
+
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+  padding-top: 96px;
 }
 
 .section-four .list {
-  display: flex;
   margin-top: 72px;
   padding: 0;
-  justify-content: center;
-  gap: 24px;
+
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 .section-four .list-name {
@@ -290,6 +313,21 @@ img {
   background-color: var(--color-white);
   box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
     0 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.section-four .container {
+  width: 296px;
+}
+
+.section-four .list-name {
+  width: 100%;
+  margin-bottom: 72px;
+}
+
+.section-four .list-name img {
+  margin: 0;
+  width: 100%;
+  height: auto;
 }
 
 .worker {
@@ -308,7 +346,8 @@ img {
 
 .list-name-portfolio {
   background-color: var(--color-white);
-  width: calc((100% - 48px) / 3);
+  width: 100%;
+  margin: 0 auto;
 }
 
 .link-card-portfolio {
@@ -358,7 +397,7 @@ img {
 }
 
 .text-add .list {
-  display: flex;
+  display: none;
   gap: 40px;
 }
 
@@ -370,14 +409,6 @@ img {
 
 ul {
   list-style-type: none;
-}
-
-.advantages-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: var(--color-grey);
 }
 
 /* footer */
@@ -397,9 +428,9 @@ ul {
 }
 
 .foot-sect .logo.link {
-  display: inline-block;
-  flex-direction: column;
-  margin-bottom: 16px;
+  display: block;
+  text-align: center;
+  margin-bottom: 17.5px;
 }
 
 .logo.link-head {
@@ -413,6 +444,7 @@ ul {
   text-decoration: none;
   color: var(--color-blue);
   margin-right: 76px;
+  margin-left: 16px;
 }
 
 .part-logo {
@@ -426,9 +458,7 @@ ul {
 /* portfolio */
 .list.main {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  flex-direction: column;
 }
 
 .container .but {
@@ -482,13 +512,15 @@ ul {
 
 .customers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 72px;
   margin: 0;
   padding: 0;
 }
 
 .item-customers {
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
 
@@ -574,7 +606,8 @@ ul {
 
 .container.foot {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 72px;
 }
 .foot-two-text {
   line-height: 1.5;
@@ -583,6 +616,7 @@ ul {
   color: #ffffff;
   margin-bottom: 16px;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .link-foot {
@@ -654,8 +688,10 @@ ul {
 }
 
 /* ----- Subscribe -------*/
+.foot-two,
+.foot-one,
 .container-subscribe {
-  margin-left: 80px;
+  margin: 0 auto;
 }
 .text-subscribe {
   margin-bottom: 16px;
@@ -664,15 +700,17 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  text-align: center;
 }
 
 .form-subscribe {
+  flex-direction: column;
   display: flex;
   gap: 24px;
 }
 
 .input-subscribe {
-  width: 264px;
+  min-width: 290px;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
@@ -910,7 +948,7 @@ ul {
 }
 
 /*---------max-width: 767px--------*/
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
   .container {
     min-width: 300px;
   }
@@ -930,21 +968,12 @@ ul {
     display: none;
   }
 
-  .section-two .list {
-    display: block;
-    margin: 0 auto;
-  }
 
   .section-two {
     margin: 96px 0 96px 0;
     padding: 0;
   }
 
-  .section-two .list {
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
-  }
   .header-three {
     font-weight: 700;
     font-size: 36px;
@@ -961,37 +990,7 @@ ul {
     width: 100%;
     height: auto;
   }
-  .section-three {
-    display: none;
-  }
 
-  .section-four .list {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .section-four {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 0;
-    padding-top: 96px;
-  }
-
-  .section-four .container {
-    width: 296px;
-  }
-
-  .section-four .list-name {
-    width: 100%;
-    margin-bottom: 72px;
-  }
-
-  .section-four .list-name img {
-    margin: 0;
-    width: 100%;
-    height: auto;
-  }
 
   .customers-list {
     display: flex;
@@ -1071,9 +1070,9 @@ ul {
   .modal {
     width: 392px;
   }
-}
+}*/
 
-@media (min-resolution: 192dpi) {
+/* @media (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(
         to bottom,
@@ -1092,7 +1091,7 @@ ul {
     display: none;
   }
 }
-
+ */
 /*----------Mobile Menu-------------*/
 .menu-toggle {
   display: flex;
@@ -1234,7 +1233,7 @@ ul {
 }
 
 /*-----------768/1157-----------*/
-@media (min-width: 768px) and (max-width: 1157px) {
+/* @media (min-width: 768px) and (max-width: 1157px) {
   .menu-container,
   .js-menu-container,
   .menu-toggle,
@@ -1251,21 +1250,11 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 12px;
-  }
+  } */
 
-  /*---------Section 2-----------*/
-  .section-two {
+/*---------Section 2-----------*/
+/*   .section-two {
     padding: 96px 0 96px 0;
-  }
-  .section-two .list {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 72px;
-  }
-
-  .section-two .list-advantages {
-    width: calc((100% - 24px) / 2);
   }
 
   .section-two .header-three {
@@ -1281,8 +1270,8 @@ ul {
     font-weight: 500;
   }
 
-  /*------------Section 4----------*/
-  .section-four {
+ */ /*------------Section 4----------*/
+/*   .section-four {
     padding: 0;
   }
   .section-four .header-two {
@@ -1303,8 +1292,8 @@ ul {
     width: 264px;
     height: auto;
   }
-  /*----------Section 5------------*/
-  .section-five {
+ */ /*----------Section 5------------*/
+/*   .section-five {
     padding-top: 96px;
     padding-bottom: 96px;
   }
@@ -1321,9 +1310,9 @@ ul {
     width: 168px;
     height: 88px;
   }
-
-  /*-----------Container Footer---------*/
-  .container.foot {
+ */
+/*-----------Container Footer---------*/
+/*   .container.foot {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -1334,7 +1323,7 @@ ul {
   .container-subscribe {
     margin: 0;
   }
-}
+ */
 
 /*-------------min-width:1158-----------*/
 @media (min-width: 1158px) {
@@ -1345,4 +1334,5 @@ ul {
 
 .fbvfrbji {
   color: #2e2f42;
+  margin: 24px 16px 24px 0;
 }

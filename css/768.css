@@ -1,0 +1,141 @@
+@media (min-width: 768px) and (max-width: 1157px) {
+  .section-two .list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 72px;
+    width: 100%;
+  }
+
+  .section-two .list-advantages {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .section-four {
+    padding: 0;
+  }
+  .section-four .header-two {
+    padding: 96px 0 72px 0;
+    margin: 0;
+  }
+
+  .section-four .list {
+    margin: 0;
+    padding-bottom: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .section-four .list-name {
+    width: 264px;
+    height: auto;
+    width: calc((100% - 24px) / 2);
+  }
+  .container {
+    min-width: 768px;
+  }
+
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    margin: 0;
+    padding: 0 108px 0 108px;
+  }
+
+  .item-customers {
+    width: calc((100% - 48px) / 3);
+    height: 88px;
+  }
+
+  .form-subscribe {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+  }
+
+  .text-subscribe {
+    text-align: start;
+  }
+
+  .container.foot {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    padding-left: 108px;
+  }
+  .foot-one,
+  .container-subscribe {
+    margin: 0;
+  }
+
+  .foot-two {
+    margin: 0;
+    padding-left: 24px;
+  }
+
+  .foot-two-text {
+    text-align: start;
+  }
+
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-tab.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .header-one {
+    font-size: 56px;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-tab-2x.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  .header-three {
+    text-align: start;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .hed .list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .text-add .list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-right: 16px;
+  }
+
+  /*Potfolio*/
+}
