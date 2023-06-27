@@ -159,4 +159,14 @@
     padding: 0;
     display: block;
   }
+  .container .but {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+
+  .foot-sect .logo.link {
+    text-align: start;
+  }
 }

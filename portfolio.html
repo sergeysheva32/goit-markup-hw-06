@@ -22,13 +22,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/768.css" />
-    <link rel="stylesheet" href="./css/1158.css" />
     <title>Portfolio</title>
   </head>
 
   <body>
-    <!-- <header class="hed">
+    <header class="hed">
       <div class="main-hed container">
         <nav class="logo-hed">
           <a class="logo link-head" href="./index.html"
@@ -37,10 +35,12 @@
 
           <ul class="list">
             <li>
-              <a class="list-menu link current" href="./index.html">Studio</a>
+              <a class="list-menu link" href="./index.html">Studio</a>
             </li>
             <li>
-              <a class="list-menu link" href="./portfolio.html">Portfolio</a>
+              <a class="list-menu link current" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li>
               <a class="list-menu link" href="">Contacts</a>
@@ -66,17 +66,17 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg class="fbvfrbji" width="32" height="22">
+          <svg class="hamburger" width="32" height="22">
             <use href="./images/icons.svg#icon-icon-menu"></use>
           </svg>
         </button>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="main-text">
         <div class="container">
           <h1 class="visually-hidden">Buttons</h1>
-          <!-- <ul class="list but">
+          <ul class="list but">
             <li>
               <button class="hero-port" type="button">All</button>
             </li>
@@ -92,7 +92,7 @@
             <li>
               <button class="hero-port" type="button">Marketing</button>
             </li>
-          </ul> -->
+          </ul>
 
           <ul class="list main">
             <li class="list-name-portfolio link">
@@ -516,7 +516,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="foot-sect">
+    <footer class="foot-sect">
       <div class="container foot">
         <div class="foot-one">
           <a class="logo link" href="./index.html"
@@ -579,7 +579,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-------------Mobile Menu--------------->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <div class="menu-mobile-container">
@@ -593,7 +593,9 @@
         <ul class="mobile-menu">
           <li><a class="mobile-menu-link" href="./index.html">Studio</a></li>
           <li>
-            <a class="mobile-menu-link" href="./portfolio.html">Portfolio</a>
+            <a class="mobile-menu-link current" href="./portfolio.html"
+              >Portfolio</a
+            >
           </li>
           <li><a class="mobile-menu-link" href="">Contacts</a></li>
         </ul>
