@@ -165,8 +165,8 @@ address li {
 }
 
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   margin: 0;
   max-width: 1440px;
   background-image: linear-gradient(
@@ -221,8 +221,8 @@ address li {
 }
 
 .section-two {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .section-two .list {
@@ -236,7 +236,6 @@ address li {
 .list-advantages {
   /* width: calc((100% - 72px) / 4); */
   min-width: 320px;
-  height: 112px;
 }
 
 .header-three {
@@ -317,7 +316,7 @@ img {
 }
 
 .section-four .container {
-  width: 296px;
+  max-width: 296px;
 }
 
 .section-four .list-name {
@@ -540,8 +539,8 @@ ul {
 }
 
 .section-five {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .header-customers {
@@ -714,7 +713,7 @@ ul {
 }
 
 .input-subscribe {
-  min-width: 290px;
+  width: 398px;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
@@ -732,7 +731,7 @@ ul {
 }
 
 .button-subscribe {
-  min-width: 165px;
+  width: 165px;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -747,6 +746,7 @@ ul {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+  margin: auto;
 }
 
 .svg-subscribe {
@@ -1096,6 +1096,35 @@ ul {
   margin: 24px 16px 24px 0;
 }
 
+.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+}
+
+.current {
+  color: #404bbf;
+}
+
+@media (max-width: 427px) {
+  .header-one {
+    max-width: 320px;
+  }
+
+  .mobile-menu-social-list {
+    gap: 24px;
+  }
+
+  .contacts-mobile-menu-tel {
+    font-size: 26px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1157px) {
   .section-two .list {
     display: flex;
@@ -1110,16 +1139,16 @@ ul {
   }
 
   .section-four {
-    padding: 0;
+    padding-top: 96px;
   }
   .section-four .header-two {
-    padding: 96px 0 72px 0;
     margin: 0;
   }
 
   .section-four .list {
     margin: 0;
     padding-bottom: 96px;
+    padding-top: 72px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -1127,12 +1156,11 @@ ul {
   }
 
   .section-four .list-name {
-    width: 264px;
     height: auto;
     width: calc((100% - 24px) / 2);
   }
   .container {
-    min-width: 768px;
+    min-width: 584px;
   }
 
   .customers-list {
@@ -1141,7 +1169,10 @@ ul {
     column-gap: 24px;
     row-gap: 72px;
     margin: 0;
-    padding: 0 108px 0 108px;
+  }
+
+  .section-five .container {
+    width: 584px;
   }
 
   .item-customers {
@@ -1165,7 +1196,7 @@ ul {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-    padding-left: 108px;
+    width: 584px;
   }
   .foot-one,
   .container-subscribe {
@@ -1267,6 +1298,24 @@ ul {
   .foot-sect .logo.link {
     text-align: start;
   }
+
+  .list-contacts {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .section-two {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .section-four .list-name {
+    margin-bottom: 0;
+  }
+
+  .section-five {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 }
 
 @media (min-width: 1158px) {
@@ -1279,7 +1328,6 @@ ul {
   .list-advantages {
     width: calc((100% - 72px) / 4);
     min-width: 264px;
-    height: 112px;
   }
 
   .advantages-icons {
@@ -1297,9 +1345,6 @@ ul {
     padding-bottom: 120px;
   }
 
-  .section-three .header-two {
-    margin-top: 120px;
-  }
   .section-three .list {
     display: flex;
     padding: 0;
@@ -1327,9 +1372,10 @@ ul {
     background-color: var(--color-white);
     box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
       0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
+    margin-bottom: 0;
   }
   .container {
-    min-width: 1158px;
+    max-width: 1158px;
   }
 
   .customers-list {
@@ -1415,6 +1461,7 @@ ul {
   .advantages-text {
     font-size: 16px;
     font-family: 'Roboto';
+    font-weight: normal;
     line-height: 24px;
     letter-spacing: 0.32px;
     color: #434455;
