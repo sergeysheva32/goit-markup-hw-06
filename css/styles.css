@@ -322,6 +322,7 @@ img {
 .section-four .list-name {
   min-width: 264px;
   margin-bottom: 72px;
+  margin: auto;
 }
 
 .section-four .list-name img {
@@ -997,7 +998,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin: 32px 0 284px 0;
+  /* margin: 32px 0 284px 0; */
 }
 
 .mobile-menu-link {
@@ -1065,6 +1066,8 @@ ul {
 }
 .menu-mobile-container {
   padding-left: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-menu-social-list {
@@ -1072,6 +1075,10 @@ ul {
   gap: 56px;
   margin: 0 0 40px 0;
   padding: 0;
+}
+
+.contacts-social {
+  margin-top: auto;
 }
 
 .mobile-menu-social-item {
@@ -1124,6 +1131,18 @@ ul {
   .contacts-mobile-menu-tel {
     font-size: 26px;
   }
+
+  .input-subscribe {
+    width: 290px;
+  }
+
+  .container {
+    max-width: 427px;
+  }
+
+  .modal {
+    max-width: 300px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1157px) {
   .section-two .list {
@@ -1134,12 +1153,17 @@ ul {
     width: 100%;
   }
 
+  .input-subscribe {
+    width: 264px;
+  }
+
   .section-two .list-advantages {
     width: calc((100% - 24px) / 2);
   }
 
   .section-four {
     padding-top: 96px;
+    padding-bottom: 96px;
   }
   .section-four .header-two {
     margin: 0;
@@ -1147,7 +1171,6 @@ ul {
 
   .section-four .list {
     margin: 0;
-    padding-bottom: 96px;
     padding-top: 72px;
     display: flex;
     flex-wrap: wrap;
@@ -1205,7 +1228,6 @@ ul {
 
   .foot-two {
     margin: 0;
-    padding-left: 24px;
   }
 
   .foot-two-text {
@@ -1325,6 +1347,9 @@ ul {
     gap: 24px;
   }
 
+  .button {
+  }
+
   .list-advantages {
     width: calc((100% - 72px) / 4);
     min-width: 264px;
@@ -1426,6 +1451,8 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
   @media (min-resolution: 192dpi) {
     .hero {
@@ -1478,8 +1505,11 @@ ul {
 
   .text-add .list {
     display: flex;
-    gap: 12px;
     margin-right: 16px;
+  }
+
+  .input-subscribe {
+    width: 264px;
   }
 
   /*Potfolio*/
